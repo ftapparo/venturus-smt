@@ -1,13 +1,13 @@
 # VENTURUS
-# Squad Management Tool
-
+## Squad Management Tool
+ 
 ## Description
 
 This project is part of a technical assessment of my knowledge in the front-end development area requested by the company Venturus.
 
 I made the choice to use the JavaScript React library to build this project [Create React App](https://github.com/facebook/create-react-app), however the whole visual implementation I am using only HTML and CSS purely.
 
-As you implement new features to the project, this Readme.md will also be updated, making it easier to understand its use.
+When I implement new features to the project, this Readme.md will also be updated, making it easier to understand the use.
 
 Finally, this project has no reason for commercialization or use, only for studies. 
 
