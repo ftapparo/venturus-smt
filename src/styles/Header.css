@@ -1,0 +1,47 @@
+.application-title-bar {
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 5px 50px 5px 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #BE1A50 0%, #88276D 100%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.application-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.application-title img {
+    object-fit: cover;
+    object-position: 0% 0;
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.user-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-information span {
+    margin-right: 5px;
+    color: var(--light-gray);
+}
+
+.user-information img {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    border-radius: 50%;
+}

@@ -1,0 +1,81 @@
+.teams-list-title {
+    display: flex;
+    justify-content: initial;
+    margin: 23px auto;
+    line-height: 32px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+
+.teams-list-title div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.teams-list-title>div:first-child {
+    width: 125px;
+    margin-left: 32px;
+    padding-right: 15px;
+    justify-content: space-between;
+    border-right: 1px solid var(--light-gray);
+}
+
+.teams-list-title>div:last-child {
+    width: 443px;
+    margin-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+.teams-list-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    margin: 0 auto;
+    width: 605px;
+    line-height: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.teams-list-data div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.teams-list-data>div {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.teams-list-data>div:hover {
+    background: rgba(168, 61, 120, 0.2);
+    color: #A83D78;
+    border-bottom: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+.teams-list-data>div>p:first-child {
+    width: 144px;
+    margin-left: 25px;
+}
+
+.teams-list-data>div>div {
+    height: 50px;
+    line-height: 50px;
+    width: 420px;
+    justify-content: space-between;
+}
+
+.teams-list-data svg {
+    height: 50px;
+    margin-left: 5px;
+    color: #A83D78;
+}
+
+.teams-list-data svg:hover {
+    cursor: pointer;
+}
