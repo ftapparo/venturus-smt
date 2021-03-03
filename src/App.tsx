@@ -12,11 +12,11 @@ export default function App() {
       <Header />
 
       <div className='content'>
-        <div className='left-container'>
+        <div>
           <MyTeams />
         </div>
 
-        <div className='right-container'>
+        <div>
           <TopFive />
           <PickedPlayer />
         </div>

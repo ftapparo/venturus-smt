@@ -51,3 +51,13 @@ body {
     width: 1285px;
     height: auto;
 }
+
+.content>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 622px;
+    height: 620px;
+
+}
