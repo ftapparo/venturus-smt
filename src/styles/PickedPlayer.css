@@ -3,11 +3,16 @@
     align-items: initial;
     flex-direction: row;
     justify-content: center;
-    width: 622px;
+    width: 620px;
     height: 250px;
-    background: linear-gradient(180deg, #A83D78 0%, #7E377F 100%);
-    filter: drop-shadow(0px 0px 12px rgba(232, 226, 232, 0.5));
+    background: linear-gradient(180deg, var(--venturus-red-light) 0%, var(--venturus-purple-light) 100%);
+    filter: drop-shadow(0px 0px 5px var(--shadow-gray));
     border-radius: 10px;
+}
+
+.picked-player-container span {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .most-picked-player,
@@ -19,12 +24,7 @@
     width: 311px;
     padding-top: 40px;
     padding-right: 60px;
-    border-right: 1px solid rgba(226, 232, 232, 0.25);
-}
-
-span {
-    font-size: 1.4rem;
-    font-weight: 700;
+    border-right: 1px solid var(--light-gray);
 }
 
 .most-picked-player>span {
@@ -35,17 +35,46 @@ span {
     color: var(--light-gray);
 }
 
-div span:nth-child(2) {
+.less-picked-player span:nth-child(2) {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.most-picked-player span:nth-child(2) {
     border-bottom: 1px solid var(--white);
 }
 
 .most-picked-player>img,
 .less-picked-player>img {
-    width: 125px;
-    height: 125px;
-    margin-right: 25px;
+    width: 122px;
+    height: 122px;
+    margin-right: 35px;
     border-radius: 50%;
-    border: 2px solid #BE1A50;
+    border: 2px solid var(--venturus-red);
     box-sizing: border-box;
-    box-shadow: 0px 0px 15px 8px #7E377F;
+    box-shadow: 0px 0px 15px 10px var(--venturus-purple-light);
+}
+
+.center-circle {
+    height: 65px;
+    width: 65px;
+    margin-top: 95px;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+    display: block;
+    position: fixed;
+}
+
+.selected-circle {
+    height: 136px;
+    width: 138px;
+    margin-right: 27px;
+    margin-top: 48px;
+    border-radius: 50%;
+    border: 2px dashed var(--light-purple);
+    position: fixed;
+}
+
+.selected-circle,
+.most-picked-player>img {
+    box-shadow: 0px 0px 15px 2px var(--title);
 }

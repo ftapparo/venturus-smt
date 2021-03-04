@@ -2,11 +2,12 @@
     display: flex;
     height: 50px;
     width: 100vw;
+    min-width: 620px;
     margin: 0 auto;
-    padding: 5px 50px 5px 50px;
+    padding: 5px 45px 5px 30px;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #BE1A50 0%, #88276D 100%);
+    background: linear-gradient(90deg, var(--venturus-red) 0%, var(--venturus-purple) 100%);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: var(--white);
@@ -16,8 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
+    font-weight: 700;
 }
 
 .application-title img {
@@ -25,7 +26,7 @@
     object-position: 0% 0;
     width: 40px;
     height: 35px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .user-information {
@@ -36,6 +37,8 @@
 
 .user-information span {
     margin-right: 5px;
+    font-size: 0.875rem;
+    font-weight: 700;
     color: var(--light-gray);
 }
 

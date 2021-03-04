@@ -19,17 +19,18 @@ noscript {
 
 :root {
     --background: #F7F3F7;
-    --gradient-a1: #BE1A50;
-    --gradient-b1: #88276D;
-    --gradient-a2: #A83D78;
-    --gradient-b2: #7E377F;
+    --venturus-red: #BE1A50;
+    --venturus-purple: #88276D;
+    --venturus-red-light: #A83D78;
+    --venturus-purple-light: #7E377F;
     --title: #553086;
     --dark-gray: #2F2F2F;
     --light-gray: #E2E8E8;
     --white: #FFFFFF;
-    --shadow-pink: #FF00D3;
+    --shadow-pink: #FFBEF4;
     --shadow-gray: #E8E2E8;
     --light-purple: #B087C5;
+    --selected-line: #F7EEF6;
 }
 
 html,
@@ -42,22 +43,41 @@ body {
     color: var(--dark-gray);
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 150px;
-    width: 1285px;
-    height: auto;
+@media (min-width: 0px) {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 15px;
+        min-width: 620px;
+        height: 1255px;
+    }
 }
+
+@media (min-width: 1285px) {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 150px;
+        width: 1285px;
+        height: auto;
+    }
+}
+
+
+
 
 .content>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 622px;
+    width: 620px;
     height: 620px;
 
 }

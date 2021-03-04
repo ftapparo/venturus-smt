@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 622px;
+    width: 620px;
     height: 620px;
     background: var(--white);
-    filter: drop-shadow(0px 0px 12px rgba(232, 226, 232, 0.5));
+    filter: drop-shadow(0px 0px 5px var(--shadow-gray));
+
     border-radius: 10px;
 }
 
@@ -34,9 +35,9 @@
     height: 37px;
     border: 0;
     border-radius: 10px;
-    background: linear-gradient(180deg, #A83D78 0%, #7E377F 100%);
+    background: linear-gradient(180deg, var(--venturus-red-light) 0%, var(--venturus-purple-light) 100%);
     color: var(--white);
-    box-shadow: 0px 5px 15px rgba(255, 0, 211, 0.40);
+    box-shadow: 0px 5px 15px var(--shadow-pink);
     font-size: 2rem;
     cursor: pointer;
     transition: 0.2s;
@@ -45,7 +46,7 @@
 }
 
 .my-teams-title-bar button:hover {
-    background: linear-gradient(180deg, #b84584 10%, #6f2f70 100%);
+    background: linear-gradient(180deg, var(--venturus-red) 10%, var(--venturus-purple) 100%);
 }
 
 .my-teams-list {
