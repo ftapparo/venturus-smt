@@ -48,3 +48,17 @@
     margin-left: 5px;
     border-radius: 50%;
 }
+
+.user-information>span:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: var(--light-gray);
+    color: var(--dark-gray);
+    font-size: 1.125rem;
+    font-weight: 500;
+}

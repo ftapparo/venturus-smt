@@ -47,10 +47,8 @@
 
 }
 
-
 .teams-list-data>div {
     border-bottom: 1px solid var(--light-gray);
-    color: var(--white);
 }
 
 .teams-list-data>div:hover {
@@ -61,12 +59,12 @@
     cursor: default;
 }
 
-.teams-list-data>div p {
-    color: var(--dark-gray);
+.team-list-icons {
+    visibility: hidden;
 }
 
-.teams-list-data>div:hover p {
-    color: var(--venturus-red-light);
+.teams-list-data>div:hover .team-list-icons {
+    visibility: visible;
 }
 
 .teams-list-data>div>p:first-child {
@@ -87,6 +85,37 @@
     cursor: pointer;
 }
 
-.team-list-icons {
-    display: flex;
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    line-height: 15px;
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    margin-left: -30px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

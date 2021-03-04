@@ -11,7 +11,8 @@ export function Header() {
 
             <div className='user-information'>
                 <span>John Doe</span>
-                <img src="http://www.github.com/ftapparo.png" alt="avatar" />
+                {/* <img src="http://www.github.com/ftapparo.png" alt="avatar" /> */}
+                <span>JD</span>
             </div>
         </div>
     );
