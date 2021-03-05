@@ -50,7 +50,7 @@
     margin-right: 35px;
     border-radius: 50%;
     border: 2px solid var(--venturus-red);
-    box-sizing: border-box;
+
     box-shadow: 0px 0px 15px 10px var(--venturus-purple-light);
 }
 

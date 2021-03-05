@@ -1,6 +1,7 @@
 import React from 'react';
 import { TeamsTable } from './TeamsTable';
 import '../styles/MyTeams.css';
+import { Link } from 'react-router-dom';
 
 export function MyTeams() {
 
@@ -17,7 +18,7 @@ export function MyTeams() {
         <div className='my-teams-container'>
             <div className='my-teams-title-bar'>
                 <span>My teams</span>
-                <button>+</button>
+                <Link to='/createteam' >+</Link>
             </div>
             <div className='my-teams-list'>
                 <TeamsTable teams={teamsData} />

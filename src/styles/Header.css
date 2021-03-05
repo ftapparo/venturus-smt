@@ -1,14 +1,14 @@
 .application-title-bar {
     display: flex;
-    height: 50px;
-    width: 100vw;
-    min-width: 620px;
-    margin: 0 auto;
-    padding: 5px 45px 5px 30px;
     align-items: center;
     justify-content: space-between;
+
+    min-width: 620px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 5px 45px 5px 30px;
+
     background: linear-gradient(90deg, var(--venturus-red) 0%, var(--venturus-purple) 100%);
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: var(--white);
 }

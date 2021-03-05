@@ -17,6 +17,7 @@ noscript {
     color: var(--dark-gray);
 }
 
+
 :root {
     --background: #F7F3F7;
     --venturus-red: #BE1A50;
@@ -37,47 +38,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
     background: var(--background);
     font-family: 'Roboto', sans-serif;
     color: var(--dark-gray);
-}
-
-@media (min-width: 0px) {
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 15px;
-        min-width: 620px;
-        height: 1255px;
-    }
-}
-
-@media (min-width: 1285px) {
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        margin: auto;
-        margin-top: 150px;
-        width: 1285px;
-        height: auto;
-    }
-}
-
-
-
-
-.content>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 620px;
-    height: 620px;
-
 }

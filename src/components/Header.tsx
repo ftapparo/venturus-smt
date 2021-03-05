@@ -3,7 +3,7 @@ import '../styles/Header.css';
 
 export function Header() {
     return (
-        <div className='application-title-bar'>
+        <header className='application-title-bar'>
             <div className='application-title'>
                 <img src="https://venturus.org.br/wp-content/themes/vent-theme/assets/img/logo-new.svg" alt="logo" />
                 <span>Squad Management Tool</span>
@@ -14,6 +14,6 @@ export function Header() {
                 {/* <img src="http://www.github.com/ftapparo.png" alt="avatar" /> */}
                 <span>JD</span>
             </div>
-        </div>
+        </header>
     );
 }
