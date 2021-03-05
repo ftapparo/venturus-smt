@@ -11,8 +11,44 @@ export default function CreateTeam() {
                 <div className='team-information'>
                     <span>TEAM INFORMATION</span>
                     <div>
-                        <div>A</div>
-                        <div>B</div>
+                        <div>
+                            <div className='field-information'>
+                                <span>Team name</span>
+                                <input type='text' placeholder='Insert team name' />
+                            </div>
+                            <div className='field-information field-description'>
+                                <span>Description</span>
+                                <textarea maxLength={100} />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='field-information'>
+                                <span>Team website</span>
+                                <input type='text' placeholder='http://myteam.com' />
+                            </div>
+                            <div className='field-information field-types'>
+                                <span>Team type</span>
+                                <div className='radio-list'>
+
+                                    <div className='radio-button'>
+                                        <input type='radio' name='radio' value='real' />
+                                        <span className='checkmark' />
+                                        <label htmlFor="choice1">Real</label>
+                                    </div>
+
+                                    <div className='radio-button'>
+                                        <input type='radio' name='radio' value='fantasy' checked />
+                                        <span className='checkmark' />
+                                        <label htmlFor="choice2">Fantasy</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className='field-information field-tags'>
+                                <span>Tags</span>
+                                <textarea maxLength={100} />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className='configure-squad'>
@@ -23,6 +59,7 @@ export default function CreateTeam() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
+

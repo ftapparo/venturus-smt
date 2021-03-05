@@ -45,7 +45,7 @@
     text-decoration: none;
 }
 
-.my-teams-title-bar button:hover {
+.my-teams-title-bar a:hover {
     background: linear-gradient(180deg, var(--venturus-red) 10%, var(--venturus-purple) 100%);
 }
 
