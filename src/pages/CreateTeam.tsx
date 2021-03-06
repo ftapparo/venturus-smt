@@ -118,17 +118,17 @@ export default function CreateTeam() {
                                     <div>
                                         <div>
                                             <span>Name:</span>
-                                            <span>Cristiano Ronaldo</span>
+                                            <span>Ronaldo Luiz de Alves</span>
                                         </div>
                                         <div>
                                             <span>Age:</span>
-                                            <span>32</span>
+                                            <span>28</span>
                                         </div>
                                     </div>
                                     <div>
                                         <div>
                                             <span>Nacionality:</span>
-                                            <span>Portugal</span>
+                                            <span>Brazil</span>
                                         </div>
                                     </div>
                                 </div>
@@ -139,17 +139,17 @@ export default function CreateTeam() {
                                     <div>
                                         <div>
                                             <span>Name:</span>
-                                            <span>Cristiano Ronaldo</span>
+                                            <span>Ronaldo da Silva de Souza</span>
                                         </div>
                                         <div>
                                             <span>Age:</span>
-                                            <span>32</span>
+                                            <span>18</span>
                                         </div>
                                     </div>
                                     <div>
                                         <div>
                                             <span>Nacionality:</span>
-                                            <span>Portugal</span>
+                                            <span>Brazil</span>
                                         </div>
                                     </div>
                                 </div>

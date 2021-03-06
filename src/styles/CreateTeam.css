@@ -230,6 +230,7 @@ textarea:focus {
     margin-top: 12px;
     border-radius: 5px;
     border: 2px dashed var(--shadow-gray);
+    font-size: 0.875rem;
 }
 
 .player-card>div {
