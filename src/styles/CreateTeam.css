@@ -16,7 +16,6 @@
     height: 1435px;
     background: var(--white);
     filter: drop-shadow(0px 0px 5px var(--shadow-gray));
-
     border-radius: 10px;
 }
 
@@ -65,12 +64,12 @@
     height: 425px;
 }
 
+/* ------------------ FIRST SECTION-------------- */
 .team-information>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 425px;
-
 }
 
 .team-information>div>div {
@@ -78,7 +77,6 @@
     justify-content: initial;
     align-items: flex-start;
     flex-direction: column;
-    width: 100%;
     height: 100%;
     padding-top: 32px;
 }
@@ -107,6 +105,7 @@ textarea:focus {
 
 .field-information {
     font-size: 0.875rem;
+    font-weight: 500;
     color: var(--dark-gray);
 }
 
@@ -170,20 +169,201 @@ textarea:focus {
 .radio-button label {
     margin-left: 15px;
     margin-right: 15px;
+    font-weight: 400;
     color: var(--dark-gray);
 }
 
-.radio-button:hover input~.checkmark {
+.radio-button:hover>input[type=radio]~.checkmark {
     background-color: var(--shadow-gray);
 }
 
-.radio-button input:checked~.checkmark {
+.radio-button>input:checked~.checkmark {
     background: linear-gradient(180deg, var(--venturus-red-light) 0%, var(--venturus-purple-light) 100%);
     border: 1px solid var(--shadow-gray);
     box-shadow: 0px 0px 0px 2px var(--white) inset;
 }
 
+/* ------------------ SECOND SECTION-------------- */
+/* ----------------------- RIGHT------------------ */
+
 .configure-squad>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 700px;
-    background: #ccffff;
+}
+
+.configure-squad>div>div {
+    display: flex;
+    justify-content: initial;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 425px;
+    height: 100%;
+    padding-top: 32px;
+}
+
+.search-players {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.search-players>span {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.search-players:focus-within {
+    color: var(--venturus-red);
+}
+
+.player-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 75px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 2px dashed var(--shadow-gray);
+}
+
+.player-card>div {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--white) 5%, var(--shadow-gray) 100%);
+}
+
+.player-card>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    padding-left: 15px;
+    padding-right: 32px;
+}
+
+.player-card>div>div span {
+    margin-left: 5px;
+}
+
+.player-card>div>div>div>span:last-child {
+    color: var(--venturus-red);
+}
+
+.player-card>div>div:first-child {
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.player-card>div>div:last-child {
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+/* ----------------------- LEFT------------------ */
+
+.formation-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.formation-container>label {
+    margin-right: 40px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    /* color: var(--dark-gray); */
+}
+
+.formation-container>select {
+    width: 145px;
+    height: 32px;
+    border-radius: 5px;
+    padding-left: 20px;
+    background: none;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+.formation-container>select:hover {
+    cursor: pointer;
+}
+
+.formation-container>div {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    padding-top: 3px;
+    padding-right: 15px;
+    margin-left: 105px;
+    width: 145px;
+    height: 32px;
+    background: var(--white);
+    border: 1px solid var(--shadow-gray);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.formation-container>div span {
+    height: 30px;
+    padding-right: 15px;
+    margin-top: -3px;
+    border-left: 1px solid var(--shadow-gray);
+}
+
+.formation-container:focus-within {
+    color: var(--venturus-red);
+}
+
+.formation-container svg {
+    color: var(--dark-gray);
+}
+
+.tactical-schema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 630px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, var(--venturus-red-light) -0%, var(--venturus-purple-light) 100%);
+}
+
+.button-save {
+    width: 100%;
+
+}
+
+.button-save a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(180deg, var(--venturus-red-light) 0%, var(--venturus-purple-light) 100%);
+    color: var(--white);
+    box-shadow: 0px 5px 15px var(--shadow-pink);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button-save a:hover {
+    background: linear-gradient(180deg, var(--venturus-red) 10%, var(--venturus-purple) 100%);
 }
