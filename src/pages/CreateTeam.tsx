@@ -1,10 +1,35 @@
-import { faSortDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+// import { faSortDown } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react'
+import Select from 'react-select'
 import { Link } from 'react-router-dom';
 import '../styles/CreateTeam.css';
 
 export default function CreateTeam() {
+
+    const [formation, setFormation] = useState(451);
+
+    const Formation = () => (
+        <img src={`/img/${formation}.png`} alt="" />
+    );
+
+    const options = [
+        { value: '451', label: '4-5-1' },
+        { value: '442', label: '4-4-2' },
+        { value: '442D', label: '4-4-2D' },
+        { value: '433', label: '4-3-3' },
+        { value: '4411', label: '4-4-1-1' },
+        { value: '4231', label: '4-2-3-1' },
+        { value: '352', label: '3-5-2' },
+        { value: '343', label: '3-4-3' },
+        { value: '3313', label: '3-3-1-3' }
+    ];
+
+
+    useEffect(() => {
+        console.log(formation);
+    }, [formation]);
+
     return (
         <div className='create-team-container'>
             <div className='create-team-content'>
@@ -34,13 +59,13 @@ export default function CreateTeam() {
                                 <div className='radio-list'>
 
                                     <div className='radio-button'>
-                                        <input type='radio' name='radio' value='real' />
+                                        <input type='radio' name='radio' value='real' onChange={() => { }} />
                                         <span className='checkmark' />
                                         <label htmlFor="choice1">Real</label>
                                     </div>
 
                                     <div className='radio-button'>
-                                        <input type='radio' name='radio' value='fantasy' checked />
+                                        <input type='radio' name='radio' value='fantasy' checked onChange={() => { }} />
                                         <span className='checkmark' />
                                         <label htmlFor="choice2">Fantasy</label>
                                     </div>
@@ -61,7 +86,7 @@ export default function CreateTeam() {
                         <div>
                             <div className='formation-container'>
                                 <label htmlFor="formations">Formation</label>
-                                <select name="formations" id="formations">
+                                {/* <select name="formations" id="formations">
                                     <option value="choice1">4-2-3-1</option>
                                     <option value="choice2">3-4-3</option>
                                     <option value="choice3">4-5-1</option>
@@ -71,15 +96,27 @@ export default function CreateTeam() {
                                     <option value="choice7">3-3-1-3</option>
                                     <option value="choice8">4-4-2</option>
                                     <option value="choice9">3-5-2</option>
-                                </select>
-                                <div>
+                                </select> */}
+
+                                <Select
+                                    classNamePrefix='formation-select'
+                                    options={options}
+                                    defaultValue={options[0]}
+                                    onChange={(e: any) => { setFormation(e.value) }}
+                                />
+
+
+                                {/* <div>
                                     <span />
                                     <FontAwesomeIcon icon={faSortDown} />
-                                </div>
+                                </div> */}
                             </div>
-                            <div className='tactical-schema'>
+
+                            <Formation />
+
+                            {/* <div className='tactical-schema'>
                                 <span></span>
-                            </div>
+                            </div> */}
                             <div className='button-save'>
                                 <Link to='/' >Save</Link>
                             </div>

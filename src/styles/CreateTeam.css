@@ -278,13 +278,71 @@ textarea:focus {
     margin-top: 10px;
 }
 
+.formation-container:focus-within label {
+    color: var(--venturus-red);
+}
+
+
 .formation-container>label {
     margin-right: 40px;
     font-size: 0.875rem;
     font-weight: 500;
-    /* color: var(--dark-gray); */
 }
 
+.formation-select__control {
+    width: 200px;
+    min-height: 32px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    font-size: 0.85rem;
+}
+
+.formation-select__control--is-focused {
+    border-color: var(--venturus-red-light) !important;
+    box-shadow: 0 0 1px var(--venturus-red-light) !important;
+}
+
+.formation-select__value-container {
+    width: 160px !important;
+    min-height: 32px !important;
+    height: 32px;
+    flex-wrap: nowrap !important;
+}
+
+.formation-select__single-value,
+.formation-select__placeholder {
+    transform: none !important;
+    position: unset !important;
+
+}
+
+.formation-select__menu {
+    font-size: 0.85rem !important;
+}
+
+.formation-select__indicators {
+    width: 40px;
+    min-height: 32px !important;
+    height: 32px;
+}
+
+.formation-select__dropdown-indicator>svg {
+    color: var(--dark-gray) !important;
+}
+
+
+.formation-select__option--is-focused {
+    background-color: var(--shadow-gray) !important;
+    color: var(--dark-gray) !important;
+}
+
+
+.formation-select__option--is-selected {
+    background-color: var(--venturus-red-light) !important;
+    color: var(--white) !important;
+}
+
+/* 
 .formation-container>select {
     width: 145px;
     height: 32px;
@@ -296,13 +354,16 @@ textarea:focus {
     outline: none;
 }
 
+
+
 .formation-container>select:hover {
     cursor: pointer;
 }
 
+
+
 .formation-container>div {
     display: flex;
-    justify-content: right;
     position: absolute;
     padding-top: 3px;
     padding-right: 15px;
@@ -315,9 +376,11 @@ textarea:focus {
     z-index: -1;
 }
 
+
 .formation-container>div span {
     height: 30px;
     padding-right: 15px;
+    margin-left: 105px;
     margin-top: -3px;
     border-left: 1px solid var(--shadow-gray);
 }
@@ -328,9 +391,9 @@ textarea:focus {
 
 .formation-container svg {
     color: var(--dark-gray);
-}
+} */
 
-.tactical-schema {
+/* .tactical-schema {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,6 +403,10 @@ textarea:focus {
     margin-bottom: 24px;
     border-radius: 5px;
     background: linear-gradient(145deg, var(--venturus-red-light) -0%, var(--venturus-purple-light) 100%);
+} */
+
+.configure-squad img {
+    margin: 20px 0;
 }
 
 .button-save {
